@@ -8,7 +8,7 @@
 // ==/UserScript==
 
 function injectButtons() {
-  const buttonData = [
+  let buttonData = [
     { id: 'prestige_last_time', text: 'TIME&nbsp;SINCE&nbsp;PRESTIGE<br>0:00:00:00.000', divId: 'prestige_tabs', class: 'subtab unlocked' },
     { id: 'ascend_last_time', text: 'TIME&nbsp;SINCE&nbsp;ASCEND<br>0:00:00:00.000', divId: 'ascension_tabs', class: 'subtab unlocked' },
     { id: 'collape_last_time', text: 'TIME&nbsp;SINCE&nbsp;COLLAPSE<br>0:00:00:00.000', divId: 'collapse_tabs', class: 'subtab unlocked' }
@@ -16,7 +16,7 @@ function injectButtons() {
   buttonData.map(data => {
     let inject = document.getElementById(data.divId);
 
-    const button = document.createElement('button');
+    let button = document.createElement('button');
     button.id = data.id;
     button.innerText = data.text;
     button.classList = data.class;
