@@ -28,9 +28,15 @@ injectButtons();
 
 
 function update_times() {
-  document.getElementById("prestige_last_time").innerHTML = "TIME&nbsp;SINCE&nbsp;PRESTIGE:<br>"+format_time(game.prestige_time_played)
-  document.getElementById("ascend_last_time").innerHTML = "TIME&nbsp;SINCE&nbsp;ASCEND:<br>"+format_time(game.ascend_time_played)
-  document.getElementById("collapse_last_time").innerHTML = "TIME&nbsp;SINCE&nbsp;COLLAPSE:<br>"+format_time(game.collapse_time_played)
+  if (game.tab == 1 && (game.prestige_bougth[11] || game.ascend >= 1 || game.collapse >= 1)) {
+    document.getElementById("prestige_last_time").innerHTML = "TIME&nbsp;SINCE&nbsp;PRESTIGE:<br>"+format_time(game.prestige_time_played)
+  }
+  if (game.tab == 2){
+    document.getElementById("ascend_last_time").innerHTML = "TIME&nbsp;SINCE&nbsp;ASCEND:<br>"+format_time(game.ascend_time_played)
+  }
+  if (game.tab == 3) {
+    document.getElementById("collapse_last_time").innerHTML = "TIME&nbsp;SINCE&nbsp;COLLAPSE:<br>"+format_time(game.collapse_time_played)
+  }
 }
 
 setInterval(update_times, 50);
