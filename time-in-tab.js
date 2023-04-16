@@ -28,7 +28,7 @@ injectButtons();
 
 
 function update_times() {
-  if (game.tab == 1 && (game.prestige_bougth[11] || game.ascend >= 1 || game.collapse >= 1)) {
+  if (game.tab == 1 && (game.prestige_bought[11] || game.ascend >= 1 || game.collapse >= 1)) {
     document.getElementById("prestige_last_time").innerHTML = "TIME&nbsp;SINCE&nbsp;PRESTIGE:<br>"+format_time(game.prestige_time_played)
   }
   if (game.tab == 2){
