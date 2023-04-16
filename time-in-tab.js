@@ -34,7 +34,7 @@ function update_times() {
   if (game.tab == 2){
     document.getElementById("ascend_last_time").innerHTML = "TIME&nbsp;SINCE&nbsp;ASCEND:<br>"+format_time(game.ascend_time_played)
   }
-  if (game.tab == 3) {
+  if (game.tab == 3 && game.collapse >= 5) {
     document.getElementById("collapse_last_time").innerHTML = "TIME&nbsp;SINCE&nbsp;COLLAPSE:<br>"+format_time(game.collapse_time_played)
   }
 }
