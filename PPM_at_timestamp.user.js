@@ -6,8 +6,8 @@
 // @description  injects informations about "best" timing on Prestige/Ascend/Collaps
 // @author       /u/H3draut3r (Git/Hedrauta)
 // @match        https://zakuro98.github.io/Spice-Idle/
-// @updateURL    https://raw.githubusercontent.com/Hedrauta/Spice-Idle-helper/main/time-in-tab.js
-// @downloadURL  https://raw.githubusercontent.com/Hedrauta/Spice-Idle-helper/main/time-in-tab.js
+// @updateURL    https://raw.githubusercontent.com/Hedrauta/Spice-Idle-helper/main/PPM_at_timestamp.user.js
+// @downloadURL  https://raw.githubusercontent.com/Hedrauta/Spice-Idle-helper/main/PPM_at_timestamp.user.js
 // @supportURL   https://github.com/Hedrauta/Spice-Idle-helper/issues
 // @noframes
 // @run-at 			 document-end
