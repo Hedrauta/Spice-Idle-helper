@@ -2,7 +2,7 @@
 // ==UserScript==
 // @name         Peak/min @ Timestamp
 // @namespace    https://github.com/Hedrauta/Spice-Idle-helper
-// @version      0.3
+// @version      0.3.1
 // @description  injects informations about "best" timing on Prestige/Ascend/Collaps
 // @author       /u/H3draut3r (Git/Hedrauta)
 // @match        https://zakuro98.github.io/Spice-Idle/
@@ -141,7 +141,7 @@ function update_PPM() {
       document.getElementById("ascend_per_s").style = "display: block";
       document.getElementById("ascend_per_s").innerHTML =
         "Peak " +
-        format_num(peak_ascend_per_s * 60, game.notation) +
+        format_dec(peak_ascend_per_s * 60, game.notation) +
         " /min @ " +
         format_time(peak_time_ascend);
     } else {
@@ -212,7 +212,7 @@ function update_PPM() {
       document.getElementById("collapse_per_s").style = "display: block;";
       document.getElementById("collapse_per_s").innerHTML =
         "Peak: " +
-        format_num(peak_collapse_per_s * 60, game.notation) +
+        format_dec(peak_collapse_per_s * 60, game.notation) +
         " /min @ " +
         format_time(peak_time_collapse);
     } else {
